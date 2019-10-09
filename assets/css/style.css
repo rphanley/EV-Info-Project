@@ -393,35 +393,47 @@ footer {
     height:15%;
     border-color:transparent;
     background-color: #17252a;
-    text-align: center;
+    text-align: right;
 }
 
 
 
-/* .foot {
+/* .footer-contents {
     margin-bottom: 20px;
 } */
 
-
-
-.icons {
-    margin-top: 15px;
+.footer-title {
+        font-family: "Exo", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        color: #fafafa;
 }
 
-a {
+.footer-text {
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: #1bbd1b;
+    display: inline-block;
+}
+
+
+.footer-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer-links a {
     padding-right: 15px;
-    /* PADDING LEFT BELOW, SPACES OUT THE ICONS ON FOOTER - WATCH FOR IMPACT TO TOP MENUS */
-    padding-left: 60px;
+    padding-left: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
     background-color: transparent;
 }
 
-.alignment {
+/* link icons settings*/
+.footer-links i{
     line-height: 2px;
-}
-
-i {
     display: inline-block;
     box-shadow: 0px 0px 2px #888;
     background-color: #C3C3C3;
@@ -439,8 +451,19 @@ i {
     margin-top: 2.5px;
     margin-bottom: 2.5px;
 
-
 }
+
+/* GENERIC SETTINGS FOR ANCHORS - MAY NOT BE NEEDED */
+a {
+    padding-right: 15px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: transparent;
+}
+
+
+
 
 /*-----------MEDIA QUERIES----------*/
 
