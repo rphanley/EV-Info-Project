@@ -436,18 +436,24 @@ footer {
     line-height: 2px;
     display: inline-block;
     box-shadow: 0px 0px 2px #888;
-    background-color: #C3C3C3;
-    color: #8F8F8F;
-    width: 41px;
-    height: 41px;
+    background-color:gold;
+    color:#3aafa9;
+    /*width: 41px;
+    height: 41px;*/
+
+    /* CHANGING WIDTH/HEIGHT TO AVOID 4TH ICON WRAPPING AROUND ON IPAD.. */
+    width: 10%;
+    height: 10%;
+
     padding: 20px 0;
     border-radius: 50%;
-    font-size: 28px;
+    /*font-size: 28px;*/
+    font-size: 25px;
     text-align: center;
     vertical-align: middle;
-    transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
     margin-top: 2.5px;
     margin-bottom: 2.5px;
 
@@ -467,6 +473,24 @@ a {
 
 /*-----------MEDIA QUERIES----------*/
 
+/* Make the footer static for small devices, remains fixed in viewport for larger devices  */
+@media(max-width: 767px) {
+    footer {
+        position:static;
+
+    }
+}
+/* Double the footer height for small devices in landscape mode */
+@media(min-width: 768px) and (max-height: 500px) {
+    footer {
+        height:30%;
+    }
+}
+
+
+
+
+/*
 @media (max-width: 768px) and (min-width: 375px) {
     .scroll-work {
         width: 80%;
@@ -495,5 +519,5 @@ a {
     }
     .fa-chevron-down {
         margin-top: 40vh;
-    }
+    } */
 }
