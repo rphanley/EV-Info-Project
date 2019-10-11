@@ -8,6 +8,10 @@ body {
  color:#3aafa9;
 }
 
+.title {
+    color:#3aafa9;
+}
+
 /*---test--*/
 
 /*----------NAVBAR---------*/
@@ -109,7 +113,22 @@ a {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-    z-index: 1;
+    z-index: -1;
+}
+
+#banner-view {
+    background-attachment: fixed;
+    background-image: url('/assets/images/banner.jpg');
+    background-repeat:no-repeat;
+    background-position: top;
+    background-size:100vw;
+    /* Adjust height of div containing the background image */
+    height:35vh;
+    width:auto;
+    margin-bottom: 0px;
+
+
+    z-index: -1;
 }
 
 .top {
