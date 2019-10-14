@@ -160,8 +160,8 @@ h1 {
 }
 
 .section-column {
-    border: 3px solid red;
-    font-size: 1.1em;
+    /* border: 3px solid red; */
+    font-size: 1em;
 
 }
 
