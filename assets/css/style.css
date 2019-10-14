@@ -159,6 +159,11 @@ a {
 
 }
 
+.table-setup {
+    /* Centre the table horizontally */
+    margin: 0px auto;
+}
+
 .top {
     padding-left: 12px;
     text-align:center;
