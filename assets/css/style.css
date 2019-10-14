@@ -143,6 +143,22 @@ a {
     z-index: -1;
 }
 
+#evplugs-pic {
+    float:left;
+    background-attachment: scroll;
+    /* background-image: url('/assets/images/test.jpg'); */
+    /* background-color:coral; */
+    background-repeat:no-repeat;
+    background-position: top;
+    /* background-size:100vw; */
+    /* Adjust height of div containing the background image */
+    /* height:100vh; */
+    /* width:auto; */
+    /* margin-bottom: 0px; */
+
+
+}
+
 .top {
     padding-left: 12px;
     text-align:center;
