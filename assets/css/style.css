@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:100,200,300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700');
 
-Catamaran
+
 
 body {
     background-color: #fdfdfd;
@@ -22,7 +22,8 @@ body {
 }
 
 .bg-color-start {
-    background-color:coral;
+    /* background-color:coral; */
+    background-color:#3aafa9;
 }
 
 
@@ -41,11 +42,7 @@ body {
 
 }
 
-.navbar .navbar-collapse {
-    text-align: right;
-    border-top: 1px solid transparent;
-    overflow-x: hidden;
-}
+
 
 .navbar-nav li a {
     padding: 20px 25px 15px 25px;
@@ -79,11 +76,30 @@ a {
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: #564F6F;
+    /* color: #564F6F; */
+    color:#07f894;
 }
 
 .navbar-right {
     float: right!important;
+}
+
+/* RIGHT NAVBAR - OUTER */
+.navbar .navbar-collapse {
+    text-align: right;
+    border-top: 1px solid transparent;
+    /* border: 2px solid orchid; */
+    width:20vw;
+    float: right;
+
+    overflow-x: hidden;
+}
+
+/* RIGHT NAVBAR - MENU LINE ITEMS */
+.navbar-right>li {
+text-align: right;
+/* border: 2px solid red; */
+width:20vw;
 }
 
 @media (max-width: 5000px) {
@@ -118,6 +134,7 @@ a {
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+
     }
     .collapse.in {
         display: block !important;
@@ -139,7 +156,8 @@ a {
 #banner-view {
     background-attachment: fixed;
     background-image: url('/assets/images/banner.jpg');
-    background-color:coral;
+    /* background-color:coral; */
+    background-color:#3aafa9;
     background-repeat:no-repeat;
     background-position: top;
     background-size:100vw;
@@ -156,7 +174,7 @@ a {
     float:left;
     background-attachment: scroll;
     /* background-image: url('/assets/images/test.jpg'); */
-    /* background-color:coral; */
+
     background-repeat:no-repeat;
     background-position: top;
     /* background-size:100vw; */
@@ -168,9 +186,16 @@ a {
 
 }
 
+th {
+    background-color:#3aafa9;
+    color: black;
+}
+
 .table-setup {
     /* Centre the table horizontally */
     margin: 0px auto;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .table-page {
@@ -197,17 +222,20 @@ h1 {
 .section-column {
     /* border: 3px solid red; */
     font-size: 1em;
+    text-align: justify;
+    padding-left:25px;
+    padding-right:25px;
 
 }
 
 .section-heading {
-    font-family: "Hepta Slab", sans-serif;
-    font-weight: 500;
+    font-family: "Arvo", sans-serif;
+    font-weight: 900;
     font-size:  20px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    color:rgb(165, 42, 114);
+    color:#17252a;
 
 }
 
@@ -337,15 +365,15 @@ footer {
     padding-top: 10px;
 }
 
-/* GENERIC SETTINGS FOR ANCHORS - MAY NOT BE NEEDED */
-a {
+/* SET RIGHT NAVBAR SETTINGS */
+.navbar-default .navbar-nav>li>a {
     padding-right: 15px;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-top: 5px;
 
-    background-color:lawngreen;
-    /* background-color: transparent; */
+     background-color: #17252a;
+     color:#3aafa9;
 }
 
 
