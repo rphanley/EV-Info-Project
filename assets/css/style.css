@@ -2,6 +2,70 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700');
 
 
+/* NAVBAR TEST SETTINGS -------------------------------------- */
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #3aafa9;
+}
+
+/* .navbar-light .navbar-toggler {
+    color: red;
+} */
+
+/* ADJUST NAVBAR LOGO AND BUTTON */
+.navbar {
+    padding: 0.5rem 1.5rem;
+}
+
+/* .navbar-collapse {
+padding-right: 3rem;
+} */
+
+
+/* ADJUST NAVBAR RIGHT SIDE MENU ITEMS */
+.navbar-nav.text-right {
+  padding-left:65vw;
+  padding-right: 0vw;
+}
+
+@media(max-width: 768px) {
+
+.navbar-nav.text-right {
+  padding-left:50vw;
+  padding-right: 0vw;
+}
+
+}
+
+.nav-item {
+    text-align:center;
+}
+
+.landing-img {
+  /* The image used */
+      background-attachment: fixed;
+      background-image: url('../images/Leaf.jpg');
+
+          background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    z-index: 1;
+
+  /* min-height: 380px; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  /* Needed to position the navbar */
+  /* position: relative; */
+}
+
+/* END NAVBAR TEST SETTINGS -------------------------------------- */
 
 body {
     background-color: #fdfdfd;
@@ -13,9 +77,9 @@ body {
  color:#3aafa9;
 } */
 
-.jumbotron h1{
+/* .jumbotron h1{
     color:#00f7d5;
-}
+} */
 
 .title {
     color:#00f7d5;
@@ -29,25 +93,25 @@ body {
 
 /*----------NAVBAR---------*/
 
-.jumbotron p {
+/* .jumbotron p {
     font-size: 2.5em;
-}
+} */
 
 
-.navbar {
+/* .navbar {
     background: none;
     border-color: transparent;
     letter-spacing: 7px;
     text-transform: uppercase;
 
-}
+} */
 
 
 
-.navbar-nav li a {
+/* .navbar-nav li a {
     padding: 20px 25px 15px 25px;
     color: transparent;
-}
+} */
 
 /*
 .language {
@@ -75,20 +139,20 @@ a {
     -webkit-transition: all .3s ease-in-out;
 }
 
-.navbar-default .navbar-nav li a:hover {
-    /* color: #564F6F; */
-    color:#07f894;
-}
+/* .navbar-default .navbar-nav li a:hover {
 
-.navbar-right {
+    color:#07f894;
+} */
+
+/* .navbar-right {
     float: right!important;
-}
+} */
 
 /* RIGHT NAVBAR - OUTER */
-.navbar .navbar-collapse {
+/* .navbar .navbar-collapse {
     text-align: right;
     border-top: 1px solid transparent;
-    /* border: 2px solid orchid; */
+
     width:20vw;
     float: right;
 
@@ -96,13 +160,14 @@ a {
 }
 
 /* RIGHT NAVBAR - MENU LINE ITEMS */
+/*
 .navbar-right>li {
 text-align: right;
-/* border: 2px solid red; */
-width:20vw;
-}
 
-@media (max-width: 5000px) {
+width:20vw;
+} */
+
+/* @media (max-width: 5000px) {
     .navbar-header {
         float: none;
     }
@@ -139,12 +204,12 @@ width:20vw;
     .collapse.in {
         display: block !important;
     }
-}
+} */
 
 
 #landing-view {
     background-attachment: fixed;
-    background-image: url('/assets/images/Leaf.jpg');
+    background-image: url('../images/Leaf.jpg');
     background-position: bottom;
     background-size: cover;
     height: 100vh;
@@ -155,7 +220,7 @@ width:20vw;
 
 #banner-view {
     background-attachment: fixed;
-    background-image: url('/assets/images/banner.jpg');
+    background-image: url('../images/banner.jpg');
     /* background-color:coral; */
     background-color:#3aafa9;
     background-repeat:no-repeat;
@@ -366,7 +431,7 @@ footer {
 }
 
 /* SET RIGHT NAVBAR SETTINGS */
-.navbar-default .navbar-nav>li>a {
+/* .navbar-default .navbar-nav>li>a {
     padding-right: 15px;
     padding-left: 20px;
     padding-bottom: 5px;
@@ -374,7 +439,7 @@ footer {
 
      background-color: #17252a;
      color:#3aafa9;
-}
+} */
 
 
 
