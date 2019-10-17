@@ -7,6 +7,8 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: #3aafa9;
+    /* MAKE BACKGROUND OF NAVBAR ITEMS TRANSPARENT */
+    /* background-color: transparent; */
 }
 
 /* .navbar-light .navbar-toggler {
@@ -24,46 +26,32 @@ padding-right: 3rem;
 
 
 /* ADJUST NAVBAR RIGHT SIDE MENU ITEMS */
+
+/* DEFAULT PADDING */
 .navbar-nav.text-right {
   padding-left:65vw;
   padding-right: 0vw;
 }
 
-@media(max-width: 768px) {
 
-.navbar-nav.text-right {
-  padding-left:50vw;
-  padding-right: 0vw;
+/* REDUCE PADDING FOR LARGER DEVICES */
+@media(min-width: 768px) {
+    .navbar-nav.text-right {
+    padding-left:50vw;
+    }
 }
 
+/* REDUCE PADDING FOR MOBILE DEVICES > 767px IN LANDSCAPE */
+@media(min-width: 768px) and (max-height: 500px) {
+    .navbar-nav.text-right {
+    padding-left:50vw;
+  }
 }
 
 .nav-item {
     text-align:center;
 }
 
-.landing-img {
-  /* The image used */
-      background-attachment: fixed;
-      background-image: url('../images/Leaf.jpg');
-
-          background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    z-index: 1;
-
-  /* min-height: 380px; */
-
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-  /* Needed to position the navbar */
-  /* position: relative; */
-}
 
 /* END NAVBAR TEST SETTINGS -------------------------------------- */
 
@@ -113,19 +101,7 @@ body {
     color: transparent;
 } */
 
-/*
-.language {
-    display: inline-block;
-    padding-right: 20px;
-    line-height: 44px;
-}
 
-.language:hover {
-    color: #564F6F!important;
-    color: rgb(245, 7, 7)!important;
-    text-decoration: none;
-}
- */
 
 a {
     background-color: #E4E4E4;
@@ -210,7 +186,7 @@ width:20vw;
 #landing-view {
     background-attachment: fixed;
     background-image: url('../images/Leaf.jpg');
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -390,18 +366,14 @@ footer {
 .footer-links i{
     line-height: 2px;
     display: inline-block;
-    box-shadow: 0px 0px 2px #888;
+    /* box-shadow: 0px 0px 2px #888; */
     background-color: transparent;
-
-
-
 
     width: 30px;
     height: 30px;
 
-
     padding: 20px 0;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /*font-size: 28px;*/
     font-size: 25px;
     text-align: center;
@@ -478,34 +450,5 @@ footer {
 
 
 
-/*
-@media (max-width: 768px) and (min-width: 375px) {
-    .scroll-work {
-        width: 80%;
-    }
-    .fa-chevron-down {
-        margin-top: 52vh;
-    }
-}
 
-@media (max-width: 992px) {
-    .scroll {
-        background-attachment: scroll;
-    }
-}
 
-@media (min-width: 992px) {
-    #about-me {
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-    }
-    #skills {
-        background-position: center;
-        background-size: cover;
-        width: 100vw;
-    }
-    .fa-chevron-down {
-        margin-top: 40vh;
-    } */
-}
