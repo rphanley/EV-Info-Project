@@ -3,12 +3,15 @@
 
 
 /* NAVBAR TEST SETTINGS -------------------------------------- */
+.navbar-light .navbar-brand {
+    background-color: #3aafa9;
 
+}
 
 .navbar-light .navbar-nav .nav-link {
     color: #3aafa9;
     /* MAKE BACKGROUND OF NAVBAR ITEMS TRANSPARENT */
-    /* background-color: transparent; */
+    background-color: transparent;
 }
 
 /* .navbar-light .navbar-toggler {
@@ -194,6 +197,36 @@ width:20vw;
     z-index: 1;
 }
 
+#landing-title {
+     color:linen;
+     position: absolute;
+     top: 10%;
+     left: 10%;
+
+}
+
+.power-button {
+    background-color: transparent;
+    color: #3aafa9  !important;
+
+    font-size: 3.12em;
+    text-align:center;
+    padding-top: 2px;
+    padding-left: 110px;
+    padding-right: 10px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+#landing-text {
+     color:linen;
+     position: absolute;
+     top: 75%;
+     left: 3%;
+
+}
+
 #banner-view {
     background-attachment: fixed;
     background-image: url('../images/banner.jpg');
@@ -213,11 +246,8 @@ width:20vw;
 
 #evplugs-pic {
     float:left;
-    background-attachment: fixed;
-    background-image: url('../images/evplugtypes.jpg');
-    background-repeat:no-repeat;
-    background-position: top;
-
+    height: auto;
+    max-width: 100%;
 }
 
 th {
@@ -288,7 +318,7 @@ h1 {
 h2 {
     margin-left: 15px;
     letter-spacing: 7px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .about-row .about-p {
@@ -414,6 +444,13 @@ footer {
 
 /*-----------MEDIA QUERIES----------*/
 
+/* Bring the power button closer to text, and reduce size, for screen widths >= 768px  */
+@media(min-width: 768px) {
+.power-button {
+     font-size: 1.12em;
+    padding-left: 10px;
+}
+
 /* Make the footer higher for screen widths >= 1400px  */
 @media(min-width: 1366px) {
     footer {
@@ -448,6 +485,9 @@ footer {
     font-size: 12px;
    } */
 }
+
+
+
 
 
 
