@@ -28,6 +28,7 @@
 /* ADJUST NAVBAR LOGO AND BUTTON */
 .navbar {
     padding: 0.5rem 1.5rem;
+    /* position:fixed; */
 }
 
 /* .navbar-collapse {
@@ -95,10 +96,14 @@ body {
 }
 
 .bg-color-start {
-    /* background-color:coral; */
     background-color:#3aafa9;
+
 }
 
+.scroll-start {
+    position:relative;
+    /* z-index: -5; */
+}
 
 /*----------NAVBAR---------*/
 
@@ -253,7 +258,6 @@ width:20vw;
 #banner-view {
     background-attachment: fixed;
     background-image: url('../images/banner.jpg');
-    /* background-color:coral; */
     background-color:#3aafa9;
     background-repeat:no-repeat;
     background-position: top;
@@ -263,8 +267,7 @@ width:20vw;
     width:auto;
     margin-bottom: 0px;
 
-
-    z-index: -1;
+    z-index: 1;
 }
 
 #evplugs-pic {
@@ -357,7 +360,7 @@ h2 {
 /*-----------FOOTER----------*/
 
 footer {
-    position: fixed;
+
     bottom: 0;
     left: 0;
     width:100%;
