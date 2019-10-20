@@ -21,9 +21,7 @@
 
 }
 
-/* .navbar-light .navbar-toggler {
-    color: red;
-} */
+
 
 /* ADJUST NAVBAR LOGO AND BUTTON */
 .navbar {
@@ -31,9 +29,6 @@
     /* position:fixed; */
 }
 
-/* .navbar-collapse {
-padding-right: 3rem;
-} */
 
 
 /* ADJUST NAVBAR RIGHT SIDE MENU ITEMS */
@@ -74,11 +69,19 @@ padding-right: 3rem;
     }
 }
 
+/* Non-transparent background for collapsed menu on smaller devices  */
+@media(max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+          background-color:#3aafa9;
+    }
+
+}
+
 
 /* END NAVBAR TEST SETTINGS -------------------------------------- */
 
 body {
-    background-color: #fdfdfd;
+      background-color:#3aafa9;
 }
 
 /*----------COLOURS---------*/
@@ -261,7 +264,7 @@ width:20vw;
     background-color:#3aafa9;
     background-repeat:no-repeat;
     background-position: top;
-    background-size:100vw;
+
     /* Adjust height of div containing the background image */
     height:35vh;
     width:auto;
@@ -296,6 +299,18 @@ th {
 .mfr-link {
     margin-left: 20px;
 }
+
+a.mfr-link {
+    background-color:transparent;
+
+    font-size: 1.12em;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
 
 .top {
     padding-left: 12px;
